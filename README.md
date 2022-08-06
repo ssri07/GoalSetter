@@ -1,2 +1,2 @@
-# Goal-Setter
-Goal-Setter
+# GoalSetter
+GoalSetter
