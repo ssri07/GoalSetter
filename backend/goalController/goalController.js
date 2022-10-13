@@ -2,7 +2,10 @@
 // @route   GET /api/v1/goals
 // @access  Public
 const getGoals = (req, res) => {
-    console.log(req.body.text)
+    if(!req.body.text){
+        res.status(400)
+        throw new Error('Please add a text field')
+    }
     res.status(200).json({message: "Get goals"});
 }
 
