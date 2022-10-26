@@ -26,7 +26,6 @@ const Login = () => {
 
             <section>
                 <form onSubmit={onSubmit}>
-
                     <div className={"form-group"}>
                         <input type="email" id={"email"} name={"email"} value={email} placeholder={"Enter your email"} onChange={onChange} className={"form-control"}/>
                     </div>
@@ -34,9 +33,8 @@ const Login = () => {
                         <input type="password" id={"password"} name={"password"} value={password} placeholder={"Enter your password"} onChange={onChange} className={"form-control"}/>
                     </div>
                     <div className={"form-group"}>
-                        <input type="password" id={"password2"} name={"password2"} value={password2} placeholder={"Confirm your password"} onChange={onChange} className={"form-control"}/>
+                        <button type={"submit"} className={"btn btn-block"}>Submit</button>
                     </div>
-
                 </form>
             </section>
         </>
