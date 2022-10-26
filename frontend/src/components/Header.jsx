@@ -21,8 +21,12 @@ const Header = () => {
         <ul>
             {user ? (<button className={"btn"} onClick={onLogout}><FaSignOutAlt/> Logout</button>
             ) : (<>
-                <RouterLink to={"/login"}><FaSignInAlt/> Login</RouterLink>
-                <RouterLink to={"/register"}><FaUser/> Register</RouterLink>
+                <li>
+                    <RouterLink to={"/login"}><FaSignInAlt/> Login</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to={"/register"}><FaUser/> Register</RouterLink>
+                </li>
             </>)
             }
         </ul>
