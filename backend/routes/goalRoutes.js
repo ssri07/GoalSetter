@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getGoals, setGoal, updateGoal, deleteGoal} = require('../controller/goalController');
+const {getGoals, setGoal, updateGoal, deleteGoal} = require('../controllers/goalController');
 
 const {protect} = require('../middleware/authMiddleware');
 
